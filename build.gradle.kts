@@ -5,7 +5,7 @@ plugins {
     id("org.jetbrains.compose")
 }
 
-group = "com.ejemplocompose"
+group = "org.example"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -28,7 +28,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "ejemplocompose"
+            packageName = "demo"
             packageVersion = "1.0.0"
         }
     }

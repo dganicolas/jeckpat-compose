@@ -10,4 +10,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "ejemplocompose"
+rootProject.name = "demo"
