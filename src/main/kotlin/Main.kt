@@ -235,5 +235,7 @@ fun MySpacer(numero: Dp) {
 
 fun main() = application {
     Window(onCloseRequest = ::exitApplication) {
+
+
     }
 }
