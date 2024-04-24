@@ -113,25 +113,29 @@ fun Ejercicio3() {
 @Preview
 fun Ejercicio4() {
         Row(
-            verticalAlignment = Alignment.Bottom
+            horizontalArrangement = Arrangement.SpaceAround,
+            verticalAlignment = Alignment.Bottom,
+            modifier = Modifier.fillMaxSize()
         ){
             Row(
                 modifier = Modifier
-                    .border(2.dp, Color.Red),
-                verticalAlignment = Alignment.Bottom,
-
+                    .border(2.dp, Color.Red)
+                    .height(200.dp)
             ) { Text("Ejemplo 1") }
             Row(
                 modifier = Modifier
                     .border(2.dp, Color.Blue)
+                    .height(150.dp)
             ) { Text("Ejemplo 2") }
             Row(
                 modifier = Modifier
                     .border(2.dp, Color.Red)
+                    .height(100.dp)
             ) { Text("Ejemplo 3") }
             Row(
                 modifier = Modifier
                     .border(2.dp, Color.Blue)
+                    .height(50.dp)
             ) { Text("Ejemplo 4") }
         }
 
@@ -143,30 +147,30 @@ fun Ejercicio4() {
 fun Ejercicio5() {
     Column {
         Box(
-            modifier = Modifier.fillMaxWidth().background(Color.Cyan).height(150.dp),
+            modifier = Modifier.fillMaxWidth().background(Color.Cyan).height(120.dp),
             contentAlignment = Alignment.Center
-        ) { Text("BOX 1", fontSize = 28.sp) }
+        ) { Text("BOX 1", fontSize = 20.sp) }
 
-        MySpacer(90.dp)
+        MySpacer(30.dp)
 
         Box(
-            modifier = Modifier.fillMaxWidth().background(Color.Gray).height(150.dp),
+            modifier = Modifier.fillMaxWidth().background(Color.Gray).height(120.dp),
             contentAlignment = Alignment.Center
-        ) { Text("BOX 2", fontSize = 28.sp) }
+        ) { Text("BOX 2", fontSize = 20.sp) }
 
-        MySpacer(180.dp)
+        MySpacer(200.dp)
 
         Box(
-            modifier = Modifier.fillMaxWidth().background(Color.Green).height(150.dp),
+            modifier = Modifier.fillMaxWidth().background(Color.Green).height(120.dp),
             contentAlignment = Alignment.Center
-        ) { Text("BOX 3", fontSize = 28.sp) }
+        ) { Text("BOX 3", fontSize = 20.sp) }
 
-        MySpacer(60.dp)
+        MySpacer(30.dp)
 
         Box(
-            modifier = Modifier.fillMaxWidth().background(Color.Magenta).height(150.dp),
+            modifier = Modifier.fillMaxWidth().background(Color.Magenta).height(120.dp),
             contentAlignment = Alignment.Center
-        ) { Text("BOX 4", fontSize = 28.sp) }
+        ) { Text("BOX 4", fontSize = 20.sp) }
     }
 }
 
@@ -225,8 +229,8 @@ fun Ejercicio6() {
 
 @Composable
 @Preview
-fun MySpacer(espacio: Dp) {
-    Spacer(modifier = Modifier.height(espacio))
+fun MySpacer(numero: Dp) {
+    Spacer(modifier = Modifier.height(numero))
 }
 
 fun main() = application {
